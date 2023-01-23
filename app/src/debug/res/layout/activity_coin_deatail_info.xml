@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CoinDeatailInfoActivity">
+
+    <ImageView
+        android:id="@+id/detailImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/fromToName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailImg">
+
+        <TextView
+            android:id="@+id/detailNameFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+
+            android:paddingBottom="5dp"
+            android:text="BTC"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detailNameTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingBottom="10dp"
+            android:text="USD"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/detailNameFrom"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fromToName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    <TextView
+        android:id="@+id/detailPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="22850"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fromToName" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/detailPrice" />
+
+    <TextView
+        android:id="@+id/detailPriceMax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="22850"
+        android:textColor="#4c9a2a"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailPrice" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/detailPriceMax" />
+
+    <TextView
+        android:id="@+id/detailPriceMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="22850"
+        android:textColor="#ff0000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailPriceMax" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/detailPriceMin" />
+
+    <TextView
+        android:id="@+id/detailLast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="Bybit"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailPriceMin" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/detailLast" />
+
+    <TextView
+        android:id="@+id/detailUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="19:20"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailLast" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/detailUpdate" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
